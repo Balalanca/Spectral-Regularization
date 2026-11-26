@@ -1,0 +1,17 @@
+[saved] results/photographic/window_mask_Omega_2.png
+[20 dB] L2: best_mu=4.642e-02, best_rel_err=0.087911
+[20 dB] H1: best_mu=4.642e-02, best_rel_err=0.064020
+[20 dB] H2: best_mu=2.154e-02, best_rel_err=0.063719
+[saved] results/photographic/tikhonov_err_vs_mu_20dB.png
+[saved] results/photographic/tikhonov_best_20dB.png
+[saved] results/photographic/spectral_recon_20dB.png
+[Bias-Var H1 analytic] SNR=20 dB: best_mu=4.642e-02
+[saved] results/photographic/bias_variance_H1_20dB.png
+[40 dB] L2: best_mu=4.642e-03, best_rel_err=0.034946
+[40 dB] H1: best_mu=1.000e-03, best_rel_err=0.034095
+[40 dB] H2: best_mu=2.154e-04, best_rel_err=0.034033
+[saved] results/photographic/tikhonov_err_vs_mu_40dB.png
+[saved] results/photographic/tikhonov_best_40dB.png
+[saved] results/photographic/spectral_recon_40dB.png
+[Bias-Var H1 analytic] SNR=40 dB: best_mu=1.000e-03
+[saved] results/photographic/bias_variance_H1_40dB.png

@@ -33,8 +33,8 @@ Three regularization penalties are investigated:
 | Method | Squared penalty symbol |
 |---|---|
 | L2 | $1$ |
-| H1 | $\omega^2$ |
-| H2 | $\omega^4$ |
+| H1 | $\lVert\omega\rVert^2$ |
+| H2 | $\lVert\omega\rVert^4$ |
 
 Hard spectral cutoff is also implemented as an alternative reconstruction strategy.
 
@@ -97,3 +97,17 @@ Generated figures are saved in `results/`.
 ## Technologies
 
 Python, NumPy, Matplotlib, Fourier analysis, inverse problems and numerical methods.
+## Photographic benchmark and spectral cutoff sensitivity
+
+The photographic experiment uses the bundled scikit-image camera benchmark by default, or a user-provided grayscale image. It compares cutoff radii 1, 2 and 4 radians/pixel, generates a spectral mask and repeats regularization parameter sweeps and analytical risk calculations at both noise levels.
+
+    python photographic_experiment.py
+    python photographic_experiment.py --image path/to/image.png
+
+![Spectral mask](results/photographic/window_mask_Omega_2.png)
+![Cutoff comparison](results/photographic/spectral_recon_20dB.png)
+![Photographic reconstruction](results/photographic/tikhonov_best_40dB.png)
+
+The photographic and phantom benchmarks are separate experiments. A separate set of photographic reconstruction panels and risk curves is available in `results/recorded/`; these are archived results for a different image, not outputs of the camera benchmark.
+
+![Photographic comparison at 20 dB](results/recorded/reconstruction_20.png)
